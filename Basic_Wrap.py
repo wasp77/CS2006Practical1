@@ -1,4 +1,4 @@
-class SimpleWrap:
+class WrappedObject:
     def __init__(self, obj1, obj2):
         self.object1 = obj1
         self.object2 = obj2
