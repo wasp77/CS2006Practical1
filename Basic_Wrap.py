@@ -9,9 +9,9 @@ class WrappedObject:
     def __mul__(self,other):
         return SimpleWrap((self.object1 + other.object1) % self.object2, self.object2)
 
-a = SimpleWrap(2,5)
+a = WrappedObject(2,5)
 print(a)
-b = SimpleWrap(4,5)
+b = WrappedObject(4,5)
 print(b)
 print(a+b)
 print(a*b)
